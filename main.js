@@ -20,13 +20,13 @@ function gotResult (error , result) {
 
         document.getElementById("result_label").innerHTML = 'I can hear - ' + result[0].label;
         document.getElementById("result_confidence").innerHTML = 'Accuracy - ' + (result[0].confidence*100).toFixed(2) + '%';
-        document.getElementById("result_label").style.color = "rgb(" + "random_number_r"+"random_number_g"+"random_number_b" + ")";
-        document.getElementById("result_confidence").style.color = "rgb(" + "random_number_r"+"random_number_g"+"random_number_b" + ")";
+        document.getElementById("result_label").style.color = "rgb(" + random_number_r+"," +random_number_g+"," +random_number_b + ")";
+        document.getElementById("result_confidence").style.color = "rgb(" + random_number_r+"," +random_number_g+"," +random_number_b + ")";
 
-        img = document.getElementById('aliens1');
-        img1 = document.getElementById('aliens2');
-        img2 = document.getElementById('aliens3');
-        img3 = document.getElementById('aliens4');
+        img = document.getElementById('aliens1')
+        img1 = document.getElementById('aliens2')
+        img2 = document.getElementById('aliens3')
+        img3 = document.getElementById('aliens4')
 
         if (result[0].label == "Clap")
          {
